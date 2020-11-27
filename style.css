@@ -1,0 +1,299 @@
+/* MAIN PAGE SECTION */
+
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{ box-sizing: inherit;}
+
+.logo-container, .main-nav{ display: flex;}
+
+.logo-container{ flex: 1;}
+
+header{ 
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+body{
+	background-color: #333333;
+	margin: auto 0;
+	font-family: "Salsa", sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+h1 {font-size: 3em;}
+
+.main-nav{
+	list-style: none;
+	display: inline-block;
+	flex: 1;
+	padding: 15px;
+    font-weight: bold;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+a{
+	color:#FFF;
+	text-decoration: none;
+}
+
+a:hover{
+    color:#F1BA4F;
+    text-decoration: none;
+} 
+
+.mozzarellaa{
+	display: flex;
+	width: 70%;
+	margin-left: 250px;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.paragraph{
+	padding-left: 25px;
+	line-height: 1.5em;
+	letter-spacing: 0.05rem;
+}
+
+.container{
+    width: 80%;
+	margin: auto;
+	padding-top: 150px;
+	align-items: center;
+	display: flex; 	
+}
+
+.chicken,
+.specialty,
+.mexican {
+    position: relative;
+    top: 200px;
+    right: 170px;
+}
+
+.call-action{
+    padding: 8em 0em 1.0em 0em;
+    display: flex;
+	justify-content: center;
+}
+
+.button{
+	font-family: "Salsa";
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color: transparent;
+	padding: 1em 2em;
+	border-style: solid;
+	border-color: #ffffff;
+	border-radius: 2em;	
+}
+
+
+/* MENU PAGE SECTION */
+
+h4{
+    text-decoration: underline;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h3{
+	border-style: hidden;
+    width: 270px;
+    height: 60px;
+    background-color: #fff;
+    border-color: #fff;
+    color: #333333;
+    padding: 20px;
+    align-content: center;
+    margin: auto;
+}
+
+.main-menu li{
+	list-style: none;
+	padding-top: 10px;
+}
+
+.main-menu{
+	display: flex;
+	column-gap: 300px;
+	padding: 20px;
+}
+
+.ing {font-size: 0.6em;}
+
+.prices {color: #F1BA4F;}
+
+.main-menu>* {
+	margin: 0 50px;
+	flex: 1;
+}
+
+.pizza-image {
+	background-image: url(img/chicken-mushroomjpeg.jpg);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	padding-left: 40px;
+}
+
+.blog {
+   display: flex;
+	width: 60%;
+	margin: auto;
+	align-items: center;
+	padding: 80px 0px 80px 0px;
+}
+
+h2 { 
+	padding-right: 100px;
+	font-size: 1.3em;
+}
+
+.recipe {
+	font-size: 0.6em;
+    margin: auto;
+    width: 70%;
+    position: relative;
+    bottom: 170px;
+}
+
+footer {
+    background-color: #F1BA4F;
+    padding: 10px;
+}
+
+footer p {
+	color: #333;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 30px 0px 20px 0px;
+}
+
+form { 
+	padding: 100px 0px 0px 50px;
+	justify-content: center;
+}
+
+button{ 
+	padding: 12px;
+	font-weight: bold;
+	border: none;
+	background-color: #333;
+	color: #fff;
+}
+
+h5 { color: #333;}
+
+input {
+	background-color: #fff;
+	border: 2px solid #fff;
+	padding: 12px;
+	width: 30%;
+	height: 20%;
+	margin-top: 10px;
+}
+
+.socials { 
+	color: #333;
+	padding: 20px 0px 0px 150px;
+}
+
+
+
+/**Responsiveness**/
+  
+@media only screen and (max-width: 698px) {
+
+  .mozzarellaa{
+	display: block;
+	width: 90%;
+	padding-top: 10px;
+	margin-left: 1em;
+}
+
+.paragraph { 
+	padding: 2em 0 0 0;
+	width: 150%;
+}
+
+  .image {
+  	height: 200px;
+  	width: 300px;
+  	padding: 2em 0 0 5em;
+}
+
+  .container{
+   display: block;
+   margin: 6em;
+   padding-top: 10px;
+}
+ 
+ .container img{padding-top: 30px;}
+
+  .chicken {
+	position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+  .specialty {
+	position: relative;
+    top: 2px;
+    left: 50px;
+}
+
+   .mexican {
+	position: relative;
+    top: 10px;
+    left: 60px;
+}
+
+  .button { margin: 0 0 2em 7em;}
+
+/* MENU PAGE SECTION */
+
+   h4 { margin-left: 60px; }
+
+  .main-menu{
+	display: block;
+	padding-left: 0px;
+}
+
+  .main-menu>* {margin: 0px; }
+
+  .blog {
+    display: block;
+	align-items: center;
+}
+
+  h2 { 
+	margin-left: 70px;
+	font-size: 1.3em;
+}
+
+  h3 { margin-left: 90px; }
+
+  .recipe {
+	font-size: 0.6em;
+	letter-spacing: 0.01em;
+    position: relative;
+    bottom: 6.0em;
+    left: 2.5em;
+}
+
+ footer { 
+ 	background-color: #F1BA4F;
+    overflow: auto;
+    width: 150%;
+}
+
+}
